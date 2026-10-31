@@ -1,3 +1,26 @@
+MovEase
+
+Discover movies. Explore your next favourite.
+
+MovEase is a movie discovery web application that helps users explore popular movies, discover new titles, and learn more about their favourite films.
+
+The project is being developed using modern web technologies, with movie information provided by The Movie Database (TMDB).
+
+Features
+
+Browse popular movies.
+
+Explore movie information.
+
+Discover movies using data from TMDB.
+
+Responsive user interface.
+
+Fast and modern web experience.
+
+More features will be added as development progresses.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
