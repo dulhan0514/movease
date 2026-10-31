@@ -1,3 +1,5 @@
+export const instant = false;
+
 export default async function TestPage() {
     const response = await fetch(
         "https://api.themoviedb.org/3/movie/popular",
