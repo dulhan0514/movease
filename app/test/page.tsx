@@ -1,3 +1,5 @@
+import MovieCard from "@/components/MovieCard";
+
 export const instant = false;
 
 export default async function TestPage() {
@@ -18,7 +20,9 @@ export default async function TestPage() {
     return(
         <main>
             <h1>Popular Movies</h1>
+            <MovieCard />
             <p>Check the console</p>
+            <MovieCard />
         </main>
     );
 }
