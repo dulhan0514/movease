@@ -3,7 +3,7 @@ export default async function TestPage() {
         "https://api.themoviedb.org/3/movie/popular",
         {
             headers:{
-                Authorization : `Bearer ${process.env.TMBD_ACCESS_TOKEN}`,
+                Authorization : `Bearer ${process.env.TMDB_ACCESS_TOKEN}`,
                 accept : "application/json",
             },
         }
