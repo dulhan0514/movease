@@ -31,11 +31,18 @@ export default async function TestPage() {
         path : data.results[1].poster_path
     }
 
+    const c : Movie = {
+        title : data.results[2].title, 
+        overview : data.results[2].overview,
+        path : data.results[2].poster_path
+    }
+
     return(
         <main>
             <h1>Popular Movies</h1>
             <MovieCard m={a} />
             <MovieCard m={b}/>
+            <MovieCard m={c}/>
         </main>
     );
 }
