@@ -1,4 +1,5 @@
 import MovieCard from "@/components/MovieCard";
+import { title } from "process";
 
 export const instant = false;
 
@@ -17,12 +18,24 @@ export default async function TestPage() {
 
     console.log(data);
 
+    const a = {
+        title : data.results[0].title, 
+        overview : data.results[0].overview,
+        path : data.results[0].poster_path
+    }
+
+    const b = {
+        title : data.results[1].title, 
+        overview : data.results[1].overview,
+        path : data.results[1].poster_path
+    }
+
     return(
         <main>
             <h1>Popular Movies</h1>
-            <MovieCard />
-            <p>Check the console</p>
-            <MovieCard />
+            <MovieCard m={a} />
+            <MovieCard m={b}/>
         </main>
     );
 }
+
