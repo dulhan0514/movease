@@ -1,6 +1,6 @@
 import MovieCard from "@/components/MovieCard";
 
-import {type Movie} from "@/components/MovieCard"
+import {type Movie} from "@/types/types"
 
 export const instant = false;
 
