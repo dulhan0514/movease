@@ -15,10 +15,3 @@ export default function MovieCard({m} : {m : Movie}){
         </div>
     );
 }
-
-
-// const movie: Movie = {
-//   title: "Interstellar",
-//   overview: "A team of explorers travels through a wormhole.",
-//   rating: "Excellent"
-// };
