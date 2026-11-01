@@ -17,27 +17,27 @@ export default async function TestPage() {
 
     const data = await response.json();
 
-    const a : Movie = {
-        title : data.results[0].title, 
-        overview : data.results[0].overview,
-        poster_path : data.results[0].poster_path,
-        id : data.results[0].id
-    }
+    // const a : Movie = {
+    //     title : data.results[0].title, 
+    //     overview : data.results[0].overview,
+    //     poster_path : data.results[0].poster_path,
+    //     id : data.results[0].id
+    // }
 
-    const b : Movie = {
-        title : data.results[1].title, 
-        overview : data.results[1].overview,
-        poster_path : data.results[1].poster_path,
-        id : data.results[1].id
+    // const b : Movie = {
+    //     title : data.results[1].title, 
+    //     overview : data.results[1].overview,
+    //     poster_path : data.results[1].poster_path,
+    //     id : data.results[1].id
 
-    }
+    // }
 
-    const c : Movie = {
-        title : data.results[2].title, 
-        overview : data.results[2].overview,
-        poster_path : data.results[2].poster_path,
-        id : data.results[2].id
-    }
+    // const c : Movie = {
+    //     title : data.results[2].title, 
+    //     overview : data.results[2].overview,
+    //     poster_path : data.results[2].poster_path,
+    //     id : data.results[2].id
+    // }
 
     return(
         <main>
