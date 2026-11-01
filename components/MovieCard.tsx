@@ -1,4 +1,4 @@
-type Movie = {
+export type Movie = {
     title:string;
     overview : string;
     path : string | null;

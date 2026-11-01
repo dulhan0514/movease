@@ -1,5 +1,6 @@
 import MovieCard from "@/components/MovieCard";
-import { title } from "process";
+
+import {type Movie} from "@/components/MovieCard"
 
 export const instant = false;
 
@@ -18,13 +19,13 @@ export default async function TestPage() {
 
     console.log(data);
 
-    const a = {
+    const a : Movie = {
         title : data.results[0].title, 
         overview : data.results[0].overview,
         path : data.results[0].poster_path
     }
 
-    const b = {
+    const b : Movie = {
         title : data.results[1].title, 
         overview : data.results[1].overview,
         path : data.results[1].poster_path
