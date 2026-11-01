@@ -1,17 +1,18 @@
 export type Movie = {
+    id : number;
     title:string;
     overview : string;
-    path : string | null;
+    poster_path : string | null;
 };
 
 export default function MovieCard({m} : {m : Movie}){
-    const imageUrl : string = "https://image.tmdb.org/t/p/w500" + m.path;
+    const imageUrl : string = "https://image.tmdb.org/t/p/w500" + m.poster_path;
     
     return(
         <div>
         <h1>{m.title}</h1>
         <p>{m.overview}</p>
-        <img src={imageUrl} alt="Interstellar Image"/>
+        <img src={imageUrl} alt={m.title} width={300}/>
         </div>
     );
 }

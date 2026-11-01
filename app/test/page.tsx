@@ -17,33 +17,46 @@ export default async function TestPage() {
 
     const data = await response.json();
 
-    console.log(data);
-
     const a : Movie = {
         title : data.results[0].title, 
         overview : data.results[0].overview,
-        path : data.results[0].poster_path
+        poster_path : data.results[0].poster_path,
+        id : data.results[0].id
     }
 
     const b : Movie = {
         title : data.results[1].title, 
         overview : data.results[1].overview,
-        path : data.results[1].poster_path
+        poster_path : data.results[1].poster_path,
+        id : data.results[1].id
+
     }
 
     const c : Movie = {
         title : data.results[2].title, 
         overview : data.results[2].overview,
-        path : data.results[2].poster_path
+        poster_path : data.results[2].poster_path,
+        id : data.results[2].id
     }
 
     return(
         <main>
             <h1>Popular Movies</h1>
-            <MovieCard m={a} />
-            <MovieCard m={b}/>
-            <MovieCard m={c}/>
+            {data.results.map((movie : any) =>(
+                <MovieCard key={movie.id} m={movie} />
+            )
+        )}
         </main>
     );
+
+
+    // return(
+    //     <main>
+    //         <h1>Popular Movies</h1>
+    //         <MovieCard m={a} />
+    //         <MovieCard m={b}/>
+    //         <MovieCard m={c}/>
+    //     </main>
+    // );
 }
 
