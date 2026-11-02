@@ -4,7 +4,7 @@ export default function MovieCard({m} : {m : Movie}){
     const imageUrl : string = "https://image.tmdb.org/t/p/w500" + m.poster_path;
     
     return(
-        <div className="w-48">
+        <div>
            <div className="relative aspect-[2/3] overflow-hidden rounded-lg ">
                 <img src={imageUrl} alt={m.title} className="object-cover w-full h-full"/>
 

@@ -39,11 +39,13 @@ export default async function TestPage() {
     // }
 
     return(
-        <main>
-            {data.results.map((movie : any) =>(
-                <MovieCard key={movie.id} m={movie} />
-            )
-        )}
+        <main className="px-10 py-6">
+            <div className="grid grid-cols-4 gap-x-20 gap-y-20">
+                {data.results.map((movie : any) =>(
+                    <MovieCard key={movie.id} m={movie} />
+                    )
+                )}
+            </div>
         </main>
     );
 
