@@ -13,7 +13,9 @@ export default function MovieCard({m} : {m : Movie}){
                 </div>
 
             </div> 
-            <h2 className="text-sm font-semibold mt-2 text-white">{m.title}</h2>
+            <h2 className="text-md font-semibold mt-2 mb-0 border-0 text-white block">{m.title}</h2> 
+            <span className="left-0 text-sm mt-0">{m.release_date.slice(0,4)}</span>
+            
         </div>
     );
 }
