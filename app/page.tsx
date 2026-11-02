@@ -40,7 +40,7 @@ export default async function TestPage() {
 
     return(
         <main className="px-10 py-6">
-            <div className="grid grid-cols-4 gap-x-20 gap-y-20">
+            <div className="grid grid-cols-1 sm:grid-cols-4 gap-x-20 gap-y-20">
                 {data.results.map((movie : any) =>(
                     <MovieCard key={movie.id} m={movie} />
                     )
