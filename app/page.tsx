@@ -40,7 +40,6 @@ export default async function TestPage() {
 
     return(
         <main>
-            <h1>Popular Movies</h1>
             {data.results.map((movie : any) =>(
                 <MovieCard key={movie.id} m={movie} />
             )
