@@ -1,4 +1,5 @@
 import MovieCard from "@/components/MovieCard";
+import MovieSlider from "@/components/MovieSlider";
 import type { Movie} from "@/types/types"
 
 export const instant = false;
@@ -14,7 +15,7 @@ export default async function TestPage() {
         }
     );
 
-    const data = await response.json();
+    const popularData = await response.json();
 
     // const a : Movie = {
     //     title : data.results[0].title, 
@@ -40,12 +41,13 @@ export default async function TestPage() {
 
     return(
         <main className="px-10 py-6">
-            <div className="grid grid-cols-1 sm:grid-cols-4 gap-x-20 gap-y-20">
-                {data.results.map((movie : any) =>(
+            <MovieSlider movies={popularData.results} sectionHeader="Popular Movies" />
+            {/* <div className="grid grid-cols-1 sm:grid-cols-4 gap-x-20 gap-y-20">
+                {popularData.results.map((movie : Movie) =>(
                     <MovieCard key={movie.id} m={movie} />
                     )
                 )}
-            </div>
+            </div> */}
         </main>
     );
 

@@ -4,7 +4,7 @@ export default function MovieCard({m} : {m : Movie}){
     const imageUrl : string = "https://image.tmdb.org/t/p/w500" + m.poster_path;
     
     return(
-        <div className="hover:-translate-y-3 transition ease-in-out duration-175">
+        <div className="hover:-translate-y-3 transition ease-in-out duration-175 shrink-0 w-[calc((100%-80px)/5)]">
            <div className="relative aspect-[2/3] overflow-hidden rounded-lg ">
                 <img src={imageUrl} alt={m.title} className="object-cover w-full h-full"/>
 
